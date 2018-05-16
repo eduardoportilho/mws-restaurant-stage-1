@@ -54,6 +54,26 @@ header nav {
   justify-content: center;
 }
 /* ====================== Navigation ====================== */
+
+a.skip-maincontent {
+  color: #fff;
+  background-color: red;
+  padding: 5px;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 12pt;
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  z-index: -999
+}
+
+a.skip-maincontent:focus, a.skip-maincontent:active {
+  left: 10px;
+  top: 10px;
+  z-index: 99999;
+}
+
 nav {
   width: 100%;
   height: 80px;

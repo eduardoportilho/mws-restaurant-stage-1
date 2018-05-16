@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <a class="skip-maincontent" href="#filter">Skip to main content</a>
   <header>
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
@@ -22,7 +23,7 @@
     </section>
 
     <section>
-      <div class="filter-options">
+      <div id="filter" class="filter-options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" aria-label="Select Neighborhood" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
