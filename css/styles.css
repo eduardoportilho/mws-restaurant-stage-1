@@ -132,7 +132,11 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Listing ====================== */
-#restaurants-list {
+#restaurants-list {  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
@@ -143,9 +147,9 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 15px;
+  margin: 0 0 15px;
   min-height: 380px;
-  padding: 0 30px 25px;
+  padding: 25px;
   text-align: left;
   width: 270px;
 }
@@ -182,6 +186,13 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+/* Tablet & up */
+@media screen and (min-width: 768px) {
+  #restaurants-list li {
+    margin: 15px;
+  }
 }
 
 /* ====================== Restaurant Details ====================== */
