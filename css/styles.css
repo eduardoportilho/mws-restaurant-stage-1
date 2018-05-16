@@ -193,7 +193,7 @@ nav h1 a {
   text-transform: uppercase;
 }
 
-/* Tablet & up */
+/* Tablet & bigger */
 @media screen and (min-width: 768px) {
   #restaurants-list li {
     margin: 15px;
@@ -293,4 +293,22 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+/* Tablet & smaller */
+@media screen and (max-width: 768px) {
+  .inside #map-container {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    top: 131px;
+  }
+
+  #breadcrumb,
+  .restaurant-content-wrapper,
+  .inside #footer,
+  #restaurant-img,
+  #restaurant-cuisine  {
+    width: 100%;
+  }
 }
