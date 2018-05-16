@@ -48,6 +48,11 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
 }
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
@@ -56,7 +61,7 @@ nav {
   text-align:center;
 }
 nav h1 {
-  margin: auto;
+  margin: 15px;
 }
 nav h1 a {
   color: #fff;
@@ -104,7 +109,7 @@ nav h1 a {
   background-color: #ccc;
 }
 /* ====================== Restaurant Filtering ====================== */
-.filter-options {  
+.filter-options {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -132,7 +137,7 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Listing ====================== */
-#restaurants-list {  
+#restaurants-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
