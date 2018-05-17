@@ -5,6 +5,19 @@ var map
 var markers = []
 
 /**
+ * Install service worker for offline caching.
+ */
+window.addEventListener("load", () => {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').then(registration => {
+      console.log('Service worker registration complete for ', registration.scope);
+    }, () => {
+      console.log('Service worker registration failure.');
+    });
+  }
+});
+
+/**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
